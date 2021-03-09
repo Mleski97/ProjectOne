@@ -49,7 +49,7 @@ body.lb-disable-scrolling {
 
   /* Background color behind image.
      This is visible during transitions. */
-  background-color: white;
+  background-color: none;
 }
 
 .lb-outerContainer:after {
@@ -186,6 +186,7 @@ body.lb-disable-scrolling {
   float: right;
   width: 30px;
   height: 30px;
+  margin-top: 20px;
   background: url(../img/images/close.png) top right no-repeat;
   text-align: right;
   outline: none;
