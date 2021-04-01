@@ -1,3 +1,7 @@
+.navbar-nav {
+  font-size: 26px;
+}
+
 header .fa-angle-down {
   display: block;
 }
@@ -12,5 +16,17 @@ header .hero-text h1 {
 
 header .btn-outline-light {
   font-size: 23px;
+}
+
+@media (max-width: 1400px) {
+  .navbar-nav {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-nav {
+    font-size: 22px;
+  }
 }
 /*# sourceMappingURL=large.css.map */

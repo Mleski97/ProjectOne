@@ -10,9 +10,39 @@ html {
 }
 
 body {
-  position: relative;
   font-family: 'Imbue', sans-serif;
-  background-color: #333;
+  background-color: #ffffff;
+  color: black;
+}
+
+.top-hero {
+  position: relative;
+  height: 15rem;
+  background-size: cover;
+  z-index: 0;
+}
+
+.top-hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.hero-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(1, 1, 1, 0.4);
+  z-index: -10;
 }
 
 .navbar {
@@ -26,7 +56,7 @@ body {
 }
 
 .navbar-nav {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .navbar-nav a:hover {
@@ -52,14 +82,6 @@ header .hero-img {
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
-}
-
-header .hero-shadow {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(1, 1, 1, 0.3);
-  z-index: -10;
 }
 
 header .hero-text {
@@ -140,6 +162,8 @@ img {
 
 #contact .jumbotron i {
   color: #fff;
+  padding: 5px;
+  font-size: 20px;
 }
 
 #contact .contact-shadow {
@@ -152,5 +176,38 @@ img {
 
 #contact .contact-us {
   color: #fff;
+}
+
+.aboutus-hero {
+  background-image: url("/ProjectOne/img/TopHero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-text {
+  font-size: 22px;
+}
+
+.container {
+  width: 1200px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+i {
+  padding: 5px;
+  font-size: 20px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+i:hover {
+  color: #e0c110;
 }
 /*# sourceMappingURL=main.css.map */
