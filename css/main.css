@@ -173,6 +173,10 @@ img {
   font-size: 20px;
 }
 
+#contact .jumbotron a {
+  color: #fff;
+}
+
 #contact .contact-shadow {
   position: absolute;
   width: 100%;
