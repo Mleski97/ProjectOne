@@ -221,15 +221,4 @@ i:hover {
 .support-img {
   width: 50%;
 }
-
-.support-box {
-  position: relative;
-}
-
-.support-text {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-}
 /*# sourceMappingURL=main.css.map */
