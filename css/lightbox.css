@@ -7,7 +7,7 @@ body.lb-disable-scrolling {
   top: 0;
   left: 0;
   z-index: 9999;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
   display: none;
@@ -47,7 +47,10 @@ body.lb-disable-scrolling {
   margin: 0 auto;
   border-radius: 4px;
 
+  /* Background color behind image.
+     This is visible during transitions. */
  
+    
 }
 
 .lb-outerContainer:after {
@@ -102,6 +105,7 @@ body.lb-disable-scrolling {
   width: 34%;
   left: 0;
   float: left;
+  margin-left: 20px;
   background: url(../img/images/prev.png) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -186,10 +190,10 @@ body.lb-disable-scrolling {
   height: 30px;
   background: url(../img/images/close.png) top right no-repeat;
   text-align: right;
-  margin-top: 20px;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
+  margin-top: 40px;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
