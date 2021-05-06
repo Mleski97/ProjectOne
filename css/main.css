@@ -7,9 +7,11 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #e2e0e0;
 }
 
 body {
+  position: relative;
   font-family: 'Imbue', sans-serif;
   background-color: #e2e0e0;
   color: black;
@@ -17,67 +19,38 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 34px;
 }
 
-.sponsor-img {
-  height: 100px;
-}
-
-.underline {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  margin: 10px;
-}
-
-.top-hero {
-  position: relative;
-  height: 15rem;
-  background-size: cover;
-  z-index: 0;
-}
-
-.top-hero-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  font-size: 50px;
+h2 {
+  text-align: center;
   text-transform: uppercase;
+  padding: 30px;
+  font-size: 26px;
 }
 
-.hero-shadow {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(1, 1, 1, 0.4);
-  z-index: -10;
+nav {
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+nav a {
+  font-size: 24px;
+  color: black;
+}
+
+nav a:hover {
+  color: #d2691e;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+nav i {
+  padding: 10px;
 }
 
 .navbar {
   background-color: white;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-
-.navbar a, i {
-  color: #000000;
-}
-
-.navbar-nav {
-  font-size: 18px;
-}
-
-.navbar-nav a:hover {
-  color: #d2691e;
-  -webkit-transition: color .3s;
-  transition: color .3s;
 }
 
 .navbar-brand {
@@ -85,21 +58,53 @@ h1 {
   font-weight: bold;
 }
 
-header {
-  color: white;
+.active {
+  color: #d2691e;
 }
 
-header .hero-img {
+.underline {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+}
+
+.card {
+  background-color: #e2e0e0;
+}
+
+.card img {
+  height: 100px;
+}
+
+.card-body {
+  height: 200px;
+  overflow: hidden;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.hero-img {
   position: relative;
   height: 100vh;
-  background-image: url("/ProjectOne/img/hero1.jpg");
+  background-image: url("/img/hero1.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
+  text-align: center;
 }
 
-header .hero-text {
+.hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -10;
+}
+
+.hero-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,138 +114,194 @@ header .hero-text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-header .hero-text p {
-  padding: 10px;
-}
-
-header .btn-outline-light {
-  text-transform: uppercase;
-  padding: 15px;
-  font-size: 15px;
-}
-
-header .fa-angle-down {
-  position: absolute;
-  bottom: 0;
-  font-size: 30px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  height: 100%;
+  z-index: 5;
   color: white;
-  display: none;
 }
 
-header .scroll-fix::before {
-  display: block;
-  margin-top: -3rem;
-  height: 3rem;
-  content: '';
+.fa-angle-down {
+  position: absolute;
+  font-size: 30px;
+  color: white;
 }
 
-#gallery {
+.hero-text {
+  font-size: 18px;
+}
+
+.btn {
+  padding: 14px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#team {
   background-color: white;
-  min-width: 100%;
-  padding: 30px;
 }
 
-h1 {
-  margin-bottom: 20px;
+#team .card img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-img {
-  max-width: 100%;
-  padding: 10px;
-}
-
-#contact .jumbotron {
+.contact {
   position: relative;
-  background-image: url(../img/contact.jpg);
+  background-image: url("/img/contact.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   z-index: 0;
 }
 
-#contact .jumbotron h2 {
-  color: #fff;
-  padding: 20px;
-  font-size: 42px;
+.contact-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: -5;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-#contact .jumbotron i {
-  color: #fff;
-  padding: 5px;
+.contact {
+  color: white;
+}
+
+.contact i, .contact a {
+  color: white;
+}
+
+.contact .fab {
+  padding: 10px;
   font-size: 20px;
 }
 
-#contact .jumbotron a {
-  color: #fff;
+.contact .fab:hover {
+  color: gold;
+  -webkit-transition: .3s color;
+  transition: .3s color;
 }
 
-#contact .contact-shadow {
-  position: absolute;
+.about-us {
+  position: relative;
+  height: 300px;
   width: 100%;
-  height: 100%;
-  background-color: rgba(1, 1, 1, 0.6);
-  z-index: -10;
-}
-
-#contact .contact-us {
-  color: #fff;
-}
-
-.aboutus-hero {
-  background-image: url("/ProjectOne/img/TopHero.jpg");
-  background-size: cover;
+  background-image: url("/img/tophero.jpg");
   background-position: center;
+  background-size: cover;
+  z-index: 0;
 }
 
 .about-text {
   font-size: 22px;
 }
 
-.container {
-  width: 1200px;
-}
-
-.card {
-  margin-bottom: 20px;
-}
-
-h5 {
-  font-weight: bold;
-}
-
-i {
-  padding: 5px;
+#artist a {
+  color: black;
+  padding: 10px;
   font-size: 20px;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
 }
 
-i:hover {
-  color: #e0c110;
+#artist a:hover {
+  color: gold;
+  -webkit-transition: .3s color;
+  transition: .3s color;
+}
+
+#artist h5 {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+#artist p {
+  font-size: 18px;
+}
+
+#artist .card-body {
+  height: 240px;
+}
+
+#artist .card {
+  -webkit-box-shadow: 4px 10px 12px black;
+          box-shadow: 4px 10px 12px black;
+  -webkit-transition: .3s transform;
+  transition: .3s transform;
+  background-color: white;
+  margin: 20px auto;
+}
+
+#artist .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#artist .card-img-top {
+  height: 200px;
+}
+
+#event a {
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#event a:hover {
+  color: gold;
+  -webkit-transition: .3s color;
+  transition: .3s color;
+}
+
+#event h5 {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+#event p {
+  font-size: 18px;
+}
+
+#event .card-body {
+  height: 240px;
+}
+
+#event .card {
+  -webkit-box-shadow: 4px 10px 12px black;
+          box-shadow: 4px 10px 12px black;
+  -webkit-transition: .3s transform;
+  transition: .3s transform;
+  background-color: white;
+  margin: 20px auto;
+}
+
+#event .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#event .card-img-top {
+  height: 300px;
 }
 
 .support-img {
   width: 50%;
 }
 
-.card img {
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+#comment .card {
+  background-color: white;
+  -webkit-box-shadow: 12px 12px 30px black;
+          box-shadow: 12px 12px 30px black;
+  margin: 0 auto;
 }
 
-.card-body {
+#comment .card-img-top {
   height: 200px;
+}
+
+#comment .text-comment {
+  font-size: 24px;
 }
 /*# sourceMappingURL=main.css.map */

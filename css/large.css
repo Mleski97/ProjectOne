@@ -1,32 +1,32 @@
-.navbar-nav {
-  font-size: 26px;
+nav a {
+  font-size: 18px;
 }
 
-header .fa-angle-down {
-  display: block;
+#aboutFoundation .container {
+  width: 1200px;
 }
 
-header .hero-text p {
-  font-size: 23px;
-}
-
-header .hero-text h1 {
-  font-size: 44px;
-}
-
-header .btn-outline-light {
-  font-size: 23px;
-}
-
-@media (max-width: 1400px) {
-  .navbar-nav {
+@media screen and (min-width: 1024px) {
+  nav a {
     font-size: 18px;
+  }
+  .card-body {
+    font-size: 26px;
+  }
+  .card-title {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 36px;
   }
 }
 
-@media (min-width: 1200px) {
-  .navbar-nav {
+@media screen and (min-width: 1200px) {
+  nav a {
     font-size: 22px;
+  }
+  .card-body {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=large.css.map */
